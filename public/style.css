@@ -1,0 +1,26 @@
+/* public/style.css */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, button {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}

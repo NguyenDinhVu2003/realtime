@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <script src="/socket.io/socket.io.js"></script> <!-- Kết nối với Socket.IO -->
+    <style>
+        #loading {
+            display: none;
+            font-size: 18px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Form</h1>
+
+    <form id="user-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="loading">Đang chờ phản hồi...</p> <!-- Loading spinner -->
+    <p id="response-message"></p> <!-- Message showing success or failure -->
+
+    <script src="/user.js"></script> <!-- Tệp user.js -->
+</body>
+</html>

